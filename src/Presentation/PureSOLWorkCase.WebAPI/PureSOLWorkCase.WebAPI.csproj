@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\PureSOLWorkCase.Data\PureSOLWorkCase.Data.csproj" />
+    <ProjectReference Include="..\..\Domain\PureSOLWorkCase.Domain\PureSOLWorkCase.Domain.csproj" />
+    <ProjectReference Include="..\..\Service\PureSOLWorkCase.Service\PureSOLWorkCase.Service.csproj" />
+  </ItemGroup>
+
+</Project>

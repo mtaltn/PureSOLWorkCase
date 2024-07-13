@@ -1,0 +1,6 @@
+@PureSOLWorkCase.WebAPI_HostAddress = http://localhost:5188
+
+GET {{PureSOLWorkCase.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

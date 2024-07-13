@@ -1,0 +1,6 @@
+@PureSOLWorkCase.OcelotAPI_HostAddress = http://localhost:5297
+
+GET {{PureSOLWorkCase.OcelotAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
