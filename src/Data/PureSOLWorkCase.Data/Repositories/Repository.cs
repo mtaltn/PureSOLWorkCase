@@ -37,10 +37,8 @@ public class Repository<T> : IRepository<T> where T : class
         _context.Set<T>().Remove(entity);
     }
 
-    public async Task<IEnumerable<Activity>> GetUserActivitiesAsync(int userId)
+    public T GetById(int id)
     {
-        return await _context.Activities
-            .Where(a => a.UserId == userId)
-            .ToListAsync();
+        return _context.Set<T>().Find(id)!;
     }
 }
