@@ -37,7 +37,7 @@ This project was developed to record the activities of the users in the system w
 
 ● Exceptionhandler: Handles exceptions that may occur in the application and handles them appropriately, providing clear error messages to the user.
 
-● Middleware: Software components used in software development processes to process HTTP requests, representing each stage in the request processing chain and increasing the modularity, flexibility and reusability of the application. Each middleware performs a specific function (e.g. authentication, logging, error handling) and routes the request to other middleware or application code.
+● Middleware: Software components used in software development processes to process HTTP requests, representing each stage in the request processing chain and increasing the modularity, flexibility and reusability of the application. Each middleware performs a specific function (e.g. authentication, logging, error handling, not found filter) and routes the request to other middleware or application code.
 
 
 ### These patterns and technologies are common components often used in modern software development projects and ensure that the application is robust, modular and easy to maintain.
