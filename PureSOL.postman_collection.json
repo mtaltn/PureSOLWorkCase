@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "893e8da7-b7cb-4f80-b0e8-1f82cf452987",
+		"name": "PureSOL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18750090"
+	},
+	"item": [
+		{
+			"name": "Ocelot",
+			"item": [
+				{
+					"name": "GetAllActivities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkpvaG4gRG9lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJleHAiOjE3MjA4OTc1MDQsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxODgvIn0.X4GhLF_pG9nPwbznp9sSRojQzlUNo1jvVXT1jPfVgP4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1.0/activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddActivities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"activityType\": \"Login\",\r\n  \"activityDate\": \"2024-07-13T14:09:29.115Z\",\r\n  \"description\": \"Login successfully.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1.0/Activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserActivities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkpvaG4gRG9lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJleHAiOjE3MjA4OTc1MDQsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxODgvIn0.X4GhLF_pG9nPwbznp9sSRojQzlUNo1jvVXT1jPfVgP4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1.0/Activities/2/userActivities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities",
+								"2",
+								"userActivities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JwtToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1.0/Jwt/JwtTokenForApiUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"Jwt",
+								"JwtTokenForApiUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActivityById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkpvaG4gRG9lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJleHAiOjE3MjA5MDA5NzksImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxODgvIn0.6u7k1K4Mii7Ye5GyMefWn62lpnHafc8JGf_KHXwFkYA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1.0/Activities/1/activity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities",
+								"1",
+								"activity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WebApi",
+			"item": [
+				{
+					"name": "GetAllActivities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkpvaG4gRG9lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJleHAiOjE3MjA4OTc1MDQsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxODgvIn0.X4GhLF_pG9nPwbznp9sSRojQzlUNo1jvVXT1jPfVgP4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5188/api/v1.0/Activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5188",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JwtToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5188/JwtTokenForApiUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5188",
+							"path": [
+								"JwtTokenForApiUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddActivities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 1,\r\n  \"activityType\": \"Login\",\r\n  \"activityDate\": \"2024-07-13T14:09:29.115Z\",\r\n  \"description\": \"Login successfully.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5188/api/v1.0/Activities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5188",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserActivities",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkpvaG4gRG9lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJleHAiOjE3MjA5MDA2MTAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxODgvIn0.E6sxlDhYeopA4LZhh5LsGdoxOG3XIxss42XQ043wc0g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5188/api/v1.0/Activities/1/userActivities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5188",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities",
+								"1",
+								"userActivities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActivityById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IkpvaG4gRG9lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJleHAiOjE3MjA5MDA5NzksImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OC8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxODgvIn0.6u7k1K4Mii7Ye5GyMefWn62lpnHafc8JGf_KHXwFkYA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5188/api/v1.0/Activities/1/activity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5188",
+							"path": [
+								"api",
+								"v1.0",
+								"Activities",
+								"1",
+								"activity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
