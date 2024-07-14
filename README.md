@@ -3,7 +3,7 @@
 
 This project was developed to record the activities of the users in the system with the help of restful api.
 
-## Kullanılan Pattenler
+## Used Pattenler
 
 ● **Repository Pattern:** Abstracts database transactions so that database transactions are not trapped in code and are reusable and testable.
 
