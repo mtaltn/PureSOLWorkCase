@@ -13,6 +13,8 @@ This project was developed to record the activities of the users in the system w
 
 ● **Decorator Pattern:** A structural design pattern, allows behavior to be added to objects dynamically without affecting the behavior of other objects from the same class. It's useful for extending functionality in a flexible and reusable way by wrapping objects with new behaviors or responsibilities.
 
+● **Property Pattern Matching:** It allows writing cleaner and more understandable code in C#. This technique, used to control certain properties of objects, provides flexibility in if and switch statements and increases the readability of the code.
+
 ## Api Gateway
 
 ● **Ocelot Api Gateway:** An API gateway solution used as an entry point in microservice architectures, routing and managing incoming requests.
