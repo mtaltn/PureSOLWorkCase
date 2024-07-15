@@ -15,6 +15,8 @@ This project was developed to record the activities of the users in the system w
 
 ● **Property Pattern Matching:** It allows writing cleaner and more understandable code in C#. This technique, used to control certain properties of objects, provides flexibility in if and switch statements and increases the readability of the code.
 
+● **Singleton Pattern :** Creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
 ## Api Gateway
 
 ● **Ocelot Api Gateway:** An API gateway solution used as an entry point in microservice architectures, routing and managing incoming requests.
